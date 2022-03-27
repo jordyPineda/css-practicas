@@ -1,0 +1,162 @@
+selector universal = * { }
+por id = #id {}
+por atributo = [nonbre="valro"]{}
+
+            pude ser clase
+                h2          p
+decendiente = contenerdor sefungo {}
+
+seudo clase= cuando pase un evento:  h2:evento {}
+---------------------------------------------------------
+eventos: 
+        hover -> pasar por encima
+
+
+---------------------------------------------------------
+
+
+teoria:
+simpre toma la ultima definicion de estilo
+especifidad  !important  ->nada le gana
+
+1 elementos base
+2 clases, atrib, sudo clases
+3 id
+4 en linea
+5 important
+
+
+----------------------------------
+
+metodologia BEM 
+nombre del contenedor__elemento class--alespesifico si hay muhos
+
+
+
+------------------------------------
+medidas
+relativas- teniendo en cuenta el contenedor
+
+    rem 
+    em - 16px por defecto algunnas veces
+        pero luego vale lo que valga el tamaño del contenedor
+
+    vw(ancho) / vh (alto) -- porsentage de la pantalla 100vw
+
+fijas
+                            (puntos)
+    font-size: 22px (cm , mm , pt)
+
+
+
+    color: #exadecimal; 
+
+propiedades basicas de texto 
+
+    font-size: medida;
+    font-family: tipografia; 
+    line-height: 1.9; espacio en altura, mas de 1 ex sobre el tamaño total de la letra 
+    font-weight: normal; ancho de la letra 100-200-400-700
+
+propiedades de caja
+
+    display: inline-block // bloque o linea
+    background-color: color;//color de fondo
+    pading: ; //distancia interna del texto y del borde de la caja
+        -bottom 
+        -top
+        -left 
+        -rigth  //o solo y los pone igual a todos
+        o continuo  y x
+                    t/r/b/l
+    height: 100px;
+    weight: 100px; 
+    box-sizing : border-box; // no salirce se su ancho y alto
+    text-aling: center;// centra el texto
+    margin: px; distancia entre cajas
+    border-radius: 50% ; redondeo de la caja
+    border: 4px solid blue; 
+            tamaño estilo color
+    box-shadow: x y desnfoque borde color;
+                2px 2px 10px 0 #0000
+    text-shadow: igual sin borde;
+    transform: rotate(45deg); 
+
+
+
+posicionamiento
+
+    static por defecto
+    relative ; guarda la posiciion asignada por defecto pero deja moverlo top left y en z 
+    absolute; no guarda su posicion asignada por html, y se referencia por la pestaña total o el box en el que este 
+                si este esta posicionado 
+    fixed: lo deja siempre en la misma posicion, como un menu superior 
+    sticky: lo fija despues de que se lo encuentra en la pagina, antes de eso es solo un relative normal
+
+
+escroles: 
+
+    dentro de una caja
+    overflow: auto; //si se sobre pasa da un scroll 
+    overflow: scroll; // siempre esta el scroll
+    overflow-y:
+    overflow-x: expandido 
+
+algo extra
+    float: right; imagenes con texto bien cuadradas xd
+
+
+    :: first-line
+    :: first-letter
+
+
+acciones 
+
+    elemento:hover  //cuando el masus pase por encima
+    elemento:link  //antes de que se visite el enlace cambia sus atributos
+    elemento:visited //despues de que se visite el enlace cambia sus atributos
+    elemento:active   //cuando se de clic sobre algo cambia
+    elemento: focus   //cuando se seleccione un input cambia 
+
+animaciones:
+
+    transition: atributo tiempo, atributo 1.2s , etc;
+                all 1s;
+    
+
+//imagenes
+    Object-fit: cover // ajusta la imagen al contenedor RECORTANDO lo que sobre
+                none // tamaño real de la imagen
+                cover // ajusta la imagen sin importar el contenido
+                scale-down // mejor entre none o contain
+
+//imagen
+    object-position: left, right, bottom, top //posicion como cuadra en el contenedor 
+                    // y px o tamaño si se quiere alejar 
+
+    cursor: tipo ; //cambiar el tipo de cursor
+
+_Colores
+     #fff;//exadecimal
+     : rgb (f,f,f) // rojo, verde, azul
+
+
+
+
+flex box //aplicable a un contenedor y afectaa a su contendido
+
+display:flex;
+flex-direction: row o column // dirreccion de alineamiento 
+flex-wrap: wrap; //no perder tamaño original del contenido 
+justify-content: center // centra todo el contenido en el contenedor 
+                 space-arround  //mismo magen de todos_ imporntante exquinas pas pequeñas por margen
+                space-between   //maximo margen entre ellos
+                space-evenly //distancia igual en todos 
+
+align-items: center //centra los elememtos verticalmente
+            flex-end //al final bottom
+            flex-start //evita que si nos hay altura, se estiren, se ajusta a su contenido 
+aling-content: lo mismo que  items pero ahora no solo fucniona en una linea, si no que en todo el 
+                contenido del contenedor
+
+
